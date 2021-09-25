@@ -13,7 +13,7 @@ h1 {
 
 .inputs {
   font-weight: 200;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .inputs div {
   margin-top: 40px;
@@ -47,6 +47,7 @@ h1 {
   border: 0;
   background-color: rgb(255 71 12);
   margin-bottom: 50px;
+  margin-top: 30px;
   color: white;
   font-family: "nanumsquareb";
 }

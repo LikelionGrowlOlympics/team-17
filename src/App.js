@@ -38,6 +38,7 @@ function App() {
   ]);
   const [save, setSave] = useState(0);
   const [result, setResult] = useState(0);
+  const [minResult, setMinResult] = useState(0);
 
   return (
     <body>
@@ -49,6 +50,8 @@ function App() {
             setIsLoading={setIsLoading}
             result={result}
             setResult={setResult}
+            setMinResult={setMinResult}
+            minResult={minResult}
           />
         ) : (
           <Loading />
@@ -60,6 +63,7 @@ function App() {
           save={save}
           car={car}
           city={city}
+          setMinResult={setMinResult}
           setIsSubmit={setIsSubmit}
           setSalary={setSalary}
           setCost={setCost}

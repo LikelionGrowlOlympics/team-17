@@ -7,8 +7,8 @@ const Result = (props) => {
   const [isMonth, setIsMonth] = useState(true);
   const dayChangeHandler = () => {
     isMonth
-      ? props.setResult(props.result * 12)
-      : props.setResult(props.result / 12);
+      ? props.setResult(props.result * 30)
+      : props.setResult(props.result / 30);
     setIsMonth(!isMonth);
   };
   return (

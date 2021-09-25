@@ -10,7 +10,9 @@ function App() {
   const [salary, setSalary] = useState(0);
   const [cost, setCost] = useState(0);
   const [car, setCar] = useState([
-    { car: "BMW", price: 7000, clicked: true },
+    { car: "현대", price: 4000, clicked: true },
+    { car: "기아", price: 3600, clicked: false },
+    { car: "BMW", price: 7000, clicked: false },
     { car: "벤츠", price: 7000, clicked: false },
     { car: "아우디", price: 10000, clicked: false },
     { car: "테슬라", price: 15000, clicked: false },

@@ -9,7 +9,7 @@ const Loading = () => {
       <img className="loadingCircle" src={loadingCircle} alt="" />
       <p className="loadingP">loading...</p>
       <div className="loadingImg">
-        <img src={loading} alt="로딩중" />
+        <img src={loading} alt="로딩중.." />
       </div>
     </>
   );

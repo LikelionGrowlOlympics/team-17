@@ -6,13 +6,16 @@ import main2 from "../images/main2.jpeg";
 const Main = (props) => {
   const submitHandler = () => {
     props.setIsSubmit(true);
+
     props.setResult(
-      (props.car.filter((item) => item.clicked === true)[0].price +
-        props.city.filter((item) => item.clicked === true)[0].price +
-        props.save) /
-        (props.salary - props.cost)
+      (Number(props.car.filter((item) => item.clicked === true)[0].price) +
+        Number(props.city.filter((item) => item.clicked === true)[0].price) +
+        Number(props.save)) /
+        (Number(props.salary) - Number(props.cost))
     );
-    props.setMinResult(props.save / (props.salary - props.cost));
+    props.setMinResult(
+      Number(props.save) / (Number(props.salary) - Number(props.cost))
+    );
     setTimeout(() => props.setIsLoading(true), 1000);
   };
 
@@ -25,6 +28,7 @@ const Main = (props) => {
           당신의 월급은?
           <input
             className="salaryInput"
+            type="number"
             onChange={(e) => props.setSalary(e.target.value)}
             value={props.salary}
           />
@@ -34,6 +38,7 @@ const Main = (props) => {
           당신의 한 달 지출은?
           <input
             className="costInput"
+            type="number"
             onChange={(e) => props.setCost(e.target.value)}
             value={props.cost}
           />
@@ -99,6 +104,7 @@ const Main = (props) => {
         목표 저축 금액 :
         <input
           className="costInput"
+          type="number"
           onChange={(e) => props.setSave(e.target.value)}
           value={props.save}
         />

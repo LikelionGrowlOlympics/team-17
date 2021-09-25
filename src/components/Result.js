@@ -11,10 +11,11 @@ const Result = (props) => {
       : props.setResult(props.result / 30);
     isMonth
       ? props.setMinResult(props.minResult * 30)
-      : props.setMinResult(props.minRresult / 30);
+      : props.setMinResult(props.minResult / 30);
 
     setIsMonth(!isMonth);
   };
+  console.log(props.minResult);
   return (
     <>
       <h1 className="resultText">
@@ -25,13 +26,16 @@ const Result = (props) => {
       <img className="resultImg" src={result1} alt="당신의 결과는?" />
 
       <button className="submit" onClick={dayChangeHandler}>
-        일수로 환산
+        {isMonth ? "일수로 환산" : "개월로 환산"}
       </button>
       <img className="resultImg" src={result2} alt="당신의 결과는?" />
 
       <h1 className="if">if</h1>
-      <p className="ifExplanation">당신이 집과, 자동차를 포기한다면?</p>
-      <h1 className="resultText">
+      <p className="ifExplan">당신이 집과, 자동차를 포기한다면?</p>
+      <h1
+        className="resultText"
+        style={{ marginTop: "40px", marginBottom: "30px" }}
+      >
         <strong>퇴사</strong>까지 <strong>{Math.ceil(props.minResult)}</strong>
         {isMonth ? "개월 " : "일 "}
         남았습니다.

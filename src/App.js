@@ -48,6 +48,7 @@ function App() {
             setIsSubmit={setIsSubmit}
             setIsLoading={setIsLoading}
             result={result}
+            setResult={setResult}
           />
         ) : (
           <Loading />

@@ -1,0 +1,15 @@
+body {
+  width: 428px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "NanumSquareR";
+}
+
+header {
+  background-color: rgb(255, 71, 12);
+  height: 30px;
+  width: 100vw;
+}

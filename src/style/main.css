@@ -1,0 +1,52 @@
+h1 {
+  font-family: "nanumsquareb";
+  font-size: 18px;
+  color: rgb(255 71 12);
+  margin-top: 45px;
+}
+
+.firstMainImage {
+  margin-top: 40px;
+  width: 170px;
+  height: 170px;
+}
+
+.inputs {
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+.inputs div {
+  margin-top: 40px;
+}
+
+.inputs input {
+  text-align: right;
+  border: 0;
+  border-bottom: 1px solid rgb(153 153 153);
+  margin: 0 10px;
+}
+
+.salaryInput {
+  max-width: 100px;
+}
+.costInput {
+  max-width: 80px;
+}
+
+.secondMainImage {
+  margin-bottom: 42px;
+}
+.select {
+  margin-bottom: 55px;
+}
+
+.submit {
+  width: 112px;
+  height: 36px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255 71 12);
+  margin-bottom: 50px;
+  color: white;
+  font-family: "nanumsquareb";
+}

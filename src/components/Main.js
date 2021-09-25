@@ -104,7 +104,6 @@ const Main = (props) => {
         />
         만 원
       </div>
-
       <button className="submit" onClick={submitHandler}>
         결과 보기
       </button>

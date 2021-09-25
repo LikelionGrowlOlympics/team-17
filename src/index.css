@@ -127,7 +127,7 @@ table {
 
 @font-face {
   font-family: "NanumSquareR";
-  src: url(fonts/nanumsquareb.eot), url(fonts/NanumSquareR.woff) format("woff");
+  src: url(fonts/NanumSquareR.woff) format("woff"), url(fonts/nanumsquareb.eot);
 }
 @font-face {
   font-family: "NanumSquareb";

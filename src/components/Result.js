@@ -9,6 +9,10 @@ const Result = (props) => {
     isMonth
       ? props.setResult(props.result * 30)
       : props.setResult(props.result / 30);
+    isMonth
+      ? props.setMinResult(props.minResult * 30)
+      : props.setMinResult(props.minRresult / 30);
+
     setIsMonth(!isMonth);
   };
   return (
@@ -25,6 +29,13 @@ const Result = (props) => {
       </button>
       <img className="resultImg" src={result2} alt="당신의 결과는?" />
 
+      <h1 className="if">if</h1>
+      <p className="ifExplanation">당신이 집과, 자동차를 포기한다면?</p>
+      <h1 className="resultText">
+        <strong>퇴사</strong>까지 <strong>{Math.ceil(props.minResult)}</strong>
+        {isMonth ? "개월 " : "일 "}
+        남았습니다.
+      </h1>
       <button
         className="submit"
         onClick={() => {

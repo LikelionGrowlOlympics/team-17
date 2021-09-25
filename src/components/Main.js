@@ -12,6 +12,7 @@ const Main = (props) => {
         props.save) /
         (props.salary - props.cost)
     );
+    props.setMinResult(props.save / (props.salary - props.cost));
     setTimeout(() => props.setIsLoading(true), 1000);
   };
 
@@ -100,7 +101,6 @@ const Main = (props) => {
           className="costInput"
           onChange={(e) => props.setSave(e.target.value)}
           value={props.save}
-          placeholder=""
         />
         만 원
       </div>

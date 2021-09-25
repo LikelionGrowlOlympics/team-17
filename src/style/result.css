@@ -1,0 +1,16 @@
+.resultText {
+  color: black;
+  margin-top: 70px;
+}
+
+.resultText strong {
+  font-size: 24px;
+  color: rgb(255 71 12);
+}
+
+.resultImg {
+  width: 200px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

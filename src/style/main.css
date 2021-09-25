@@ -50,3 +50,23 @@ h1 {
   color: white;
   font-family: "nanumsquareb";
 }
+
+.selectWrapper {
+  width: 300px;
+  display: flex;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.selectWrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.selectItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 85px;
+  height: 30px;
+  border: 1px solid rgb(255 71 12);
+}

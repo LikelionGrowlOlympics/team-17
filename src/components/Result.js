@@ -15,7 +15,6 @@ const Result = (props) => {
 
     setIsMonth(!isMonth);
   };
-  console.log(props.minResult);
   return (
     <>
       <h1 className="resultText">

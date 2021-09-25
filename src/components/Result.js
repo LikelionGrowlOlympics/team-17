@@ -11,7 +11,7 @@ const Result = (props) => {
       : props.setResult(props.result / 30);
     isMonth
       ? props.setMinResult(props.minResult * 30)
-      : props.setMinResult(props.minRresult / 30);
+      : props.setMinResult(props.minResult / 30);
 
     setIsMonth(!isMonth);
   };
